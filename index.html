@@ -18,7 +18,6 @@
             <div class="col-1"></div>
             <div class="col">
                 <!-- Form -->
-
                 <div class="card text-start">
                     <div class="card-header">
                         <h4>Payment form example</h4>
@@ -26,26 +25,26 @@
                     <div class="card-body">
                         <div class="alert alert-danger" role="alert">Some fields are missing</div>
                         <!-- dentro del Form -->
-                        <form class="row g-3">
+                        <form class="row g-3" action="result.html" method="post">
                             <div class="col-md-6">
-                                <label for="inputCity" class="form-label">Card #</label>
-                                <input type="text" class="form-control" id="inputCity" placeholder="XXXXXXXXXXXXXXXXX">
+                                <label for="inputCard" class="form-label">Card #</label>
+                                <input type="password" class="form-control" id="inputCard" placeholder="XXXXXXXXXXXXXXXXX">
                             </div>
                             <div class="col-md-4">
-                                <label for="inputState" class="form-label">CVC #</label>
-                                <input type="text" class="form-control" id="inputCity" placeholder="000">
+                                <label for="inputCVC" class="form-label">CVC #</label>
+                                <input type="password" class="form-control" id="inputCVC" placeholder="000">
                             </div>
                             <div class="col-md-2">
-                                <label for="inputZip" class="form-label">Amount</label>
-                                <input type="text" class="form-control" id="inputZip" placeholder="$">
+                                <label for="inputAmount" class="form-label">Amount</label>
+                                <input type="text" class="form-control" id="inputAmount" placeholder="$">
                             </div>
                             <div class="col-md-6">
-                                <label for="inputEmail4" class="form-label">First Name</label>
-                                <input type="email" class="form-control" id="inputEmail4">
+                                <label for="inputFirstname" class="form-label">First Name</label>
+                                <input type="text" class="form-control" id="inputFirstname">
                             </div>
                             <div class="col-md-6">
-                                <label for="inputPassword4" class="form-label">Last Name</label>
-                                <input type="password" class="form-control" id="inputPassword4">
+                                <label for="inputLastname" class="form-label">Last Name</label>
+                                <input type="text" class="form-control" id="inputLastname">
                             </div>
                             <div class="col-md-6">
                                 <label for="inputCity" class="form-label">City</label>
@@ -66,7 +65,7 @@
                             </div>
                             <div class="col-md-6">
                                 <p>We accept:</p><br>
-                                <button type="button" class="btn btn-secondary">
+                                <button type="button" class="btn btn-secondary" action="result.html" method="post">
                                     <div class="form-check form-check-inline">
                                         <input class="form-check-input" type="radio" name="inlineRadioOptions"
                                             id="inlineRadio1" value="option1">
@@ -103,14 +102,14 @@
 
                             </div>
                             <div class="col-md-6">
-                                <label for="exampleFormControlTextarea1" class="form-label">Message</label>
-                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                                <label for="Textarea" class="form-label">Message</label>
+                                <textarea class="form-control" id="Textarea" rows="3"></textarea>
                                 <div class="form-text">Add any notes here.</div>
                             </div>
                     </div><!-- Fin card body-->
                     <div class="card-footer text-end">
-                        <a href="#" class="btn btn-secondary">Cancel</a>
-                        <a href="#" class="btn btn-primary">Send</a>
+                        <a href="#" class="btn btn-secondary" type="submit" onclick="window.location.href='resultno.html';">Cancel</a>
+                        <a href="#" class="btn btn-primary" type="submit" onclick="window.location.href='result.html';">Send</a>
                     </div>
                 </div> <!-- Fin card -->
                 </form> <!-- Fin form y row g3 -->
